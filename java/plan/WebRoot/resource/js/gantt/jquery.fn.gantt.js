@@ -33,8 +33,8 @@
         var settings = {
             source: [],
             itemsPerPage: 7,
-            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-            dow: ["S", "M", "T", "W", "T", "F", "S"],
+            months: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+            dow: ["日", "一", "二", "三", "四", "五", "六"],
             navigate: "buttons",
             scale: "days",
             useCookie: false,
