@@ -14,9 +14,16 @@
 		<title>plan.com</title>
 		
 		<link href="<%=request.getContextPath() %>/resource/css/gantt/style.css" type="text/css" rel="stylesheet"/>
-        <link href="<%=request.getContextPath() %>/resource/css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="<%=request.getContextPath() %>/resource/css/styles.css" type="text/css" rel="stylesheet"/>
         <link href="<%=request.getContextPath() %>/resource/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<link href="<%=request.getContextPath() %>/resource/css/gantt/prettify.css" rel="stylesheet" type="text/css"/>
+		
+		<!-- javascript -->
+		<script src="<%=request.getContextPath() %>/resource/js/jquery-1.11.1.min.js"></script>
+		<script src="<%=request.getContextPath() %>/resource/js/gantt/jquery.fn.gantt.js"></script>
+		<script src="<%=request.getContextPath() %>/resource/js/bootstrap.min.js"></script>
+		<script src="<%=request.getContextPath() %>/resource/js/gantt/prettify.js"></script>
+		<script src="<%=request.getContextPath() %>/resource/js/gantt/projectPlan.js"></script>
 		
 		<style type="text/css">
 			body {
@@ -60,12 +67,5 @@
 			<div class="gantt"></div>
 		</div>
 		<jsp:include page="/WEB-INF/view/base/footer.jsp" />
-		
-		<!-- javascript -->
-		<script src="<%=request.getContextPath() %>/resource/js/jquery-1.11.1.min.js"></script>
-		<script src="<%=request.getContextPath() %>/resource/js/gantt/jquery.fn.gantt.js"></script>
-		<script src="<%=request.getContextPath() %>/resource/js/bootstrap.min.js"></script>
-		<script src="<%=request.getContextPath() %>/resource/js/gantt/prettify.js"></script>
-		<script src="<%=request.getContextPath() %>/resource/js/gantt/projectPlan.js"></script>
 	</body>
 </html>
