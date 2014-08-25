@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 计划 -->
+<mapper namespace="PlanInfo">
+	<resultMap type="com.convenient.plan.persistent.model.PlanInfo" id="planInfo">
+		<result property="planId" column="plan_id"/>
+		<result property="projectId" column="project_id"/>
+		<result property="planDesc" column="plan_desc"/>
+		<result property="planStartTime" column="plan_start_time"/>
+		<result property="planEndTime" column="plan_end_time"/>
+		<result property="planLabel" column="plan_label"/>
+		<result property="planStyle" column="plan_style"/>
+		<result property="planSeq" column="plan_seq"/>
+	</resultMap>
+
+	<select id="getPlanInfoListByProjectId" parameterType="string" resultMap="planInfo">
+		SELECT 
+			t.plan_id,
+			t.project_id,
+			t.plan_desc,
+			UNIX_TIMESTAMP(t.plan_start_time) * 1000 AS plan_start_time,
+			UNIX_TIMESTAMP(t.plan_end_time) * 1000 AS plan_end_time,
+			t.plan_label,
+			t.plan_style,
+			t.plan_seq
+		 FROM plan_info t WHERE t.project_id = #{value} 
+		ORDER BY t.plan_seq
+	</select>
+</mapper>

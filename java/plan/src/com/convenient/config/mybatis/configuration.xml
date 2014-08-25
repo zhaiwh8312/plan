@@ -24,6 +24,7 @@
 		<setting name="defaultStatementTimeout" value="25000" />
 	</settings>
 
+
 	<typeAliases>
 		<typeAlias type="java.util.HashMap" alias="hashmap" />
 		<typeAlias type="java.util.Map" alias="map" />
@@ -31,21 +32,6 @@
 		<typeAlias type="java.lang.String" alias="string" />
 		
 		<!-- 实体 -->
-		<!-- 
-		<typeAlias type="com.convenient.reservation.persistent.model.BaseDept" alias="baseDept" />
-		<typeAlias type="com.convenient.reservation.persistent.model.BaseJob" alias="baseJob" />
-		<typeAlias type="com.convenient.reservation.persistent.model.BaseResource" alias="baseResource" />
-		<typeAlias type="com.convenient.reservation.persistent.model.BaseRole" alias="baseRole" />
-		<typeAlias type="com.convenient.reservation.persistent.model.BaseRoleResource" alias="baseRoleResource" />
-		<typeAlias type="com.convenient.reservation.persistent.model.BaseUser" alias="baseUser" />
-		<typeAlias type="com.convenient.reservation.persistent.model.BaseUserRole" alias="baseUserRole" />
-		<typeAlias type="com.convenient.reservation.persistent.model.GoodAttachInfo" alias="goodAttachInfo" />
-		<typeAlias type="com.convenient.reservation.persistent.model.GoodInfo" alias="goodInfo" />
-		<typeAlias type="com.convenient.reservation.persistent.model.OrderDetailInfo" alias="orderDetailInfo" />
-		<typeAlias type="com.convenient.reservation.persistent.model.OrderInfo" alias="orderInfo" />
-		<typeAlias type="com.convenient.reservation.persistent.model.OrderUserAttach" alias="orderUserAttach" />
-		<typeAlias type="com.convenient.reservation.persistent.model.ReservationInfo" alias="reservationInfo" />
-		 -->
 	</typeAliases>
 
 	<!-- 分页插件 利用拦截器实现 -->
@@ -57,21 +43,11 @@
 	</plugins>
 	
 	<!-- sqlmap管理 -->
-	<!-- 
 	<mappers>
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/BaseDept.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/BaseJob.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/BaseResource.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/BaseRole.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/BaseRoleResource.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/BaseUser.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/BaseUserRole.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/GoodAttachInfo.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/GoodInfo.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/OrderDetailInfo.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/OrderInfo.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/OrderUserAttach.xml" />
-		<mapper resource="com/convenient/reservation/persistent/model/mysql/ReservationInfo.xml" />
+		<!-- 
+		<mapper resource="com/convenient/plan/persistent/model/mysql/BaseUser.xml" />
+		 -->
+		<mapper resource="com/convenient/plan/persistent/model/mysql/ProjectInfo.xml" />
+		<mapper resource="com/convenient/plan/persistent/model/mysql/PlanInfo.xml" />
 	</mappers>
-	 -->
 </configuration>

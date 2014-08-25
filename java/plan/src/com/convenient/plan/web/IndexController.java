@@ -13,7 +13,7 @@ public class IndexController {
 	public ModelAndView doIndex() {
 		ModelAndView mav = new ModelAndView();
 		
-		mav.setViewName("view/index.jsp");
+		mav.setViewName("view/plan/index.jsp");
 		
 		return mav;
 	}
