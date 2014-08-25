@@ -64,7 +64,7 @@
 	<!-- 系统初始化数据 begin -->
 	<context-param>
 		<param-name>webAppRootKey</param-name>
-		<param-value>reservation.root</param-value>
+		<param-value>plan.root</param-value>
 	</context-param>
 
 	<!-- spring使用的log4j配置 -->
